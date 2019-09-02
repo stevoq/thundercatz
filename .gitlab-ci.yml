@@ -1,0 +1,5 @@
+stages: 
+    - Live
+    
+Live deploy
+    - ./setup
