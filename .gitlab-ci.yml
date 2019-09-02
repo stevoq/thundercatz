@@ -2,4 +2,5 @@ stages:
     - Live
     
 Live deploy
-    - ./setup
+    stage: Live
+    script: ./setup
