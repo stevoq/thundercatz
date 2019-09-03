@@ -1,10 +1,12 @@
+package Java.thundercatz;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Time {
 
     DateTimeFormatter dateTimeFormatter;
-    String startTime;
+    private String startTime;
 
     public Time (LocalDateTime nowTime){
       dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
