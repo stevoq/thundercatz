@@ -1,6 +1,30 @@
-stages: 
-    - Live
-    
-Live deploy
-    stage: Live
-    script: ./setup
+image: maven:latest
+
+workspace:
+    clean: all
+stages:
+    - build
+    - test
+    - deploy
+
+#cache:
+#    paths:
+#        - .m2/repository/
+#        - target/
+
+build:
+    stage: build
+    script:
+        - mvn compile
+
+test:
+    stage: test
+    script:
+        - mvn test
+
+deploy:
+    stage: deploy
+    script:
+        - mvn deploy
+    only:
+        - master
