@@ -1,7 +1,5 @@
 image: maven:latest
 
-workspace:
-    clean: all
 stages:
     - build
     - test
