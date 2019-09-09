@@ -1,4 +1,4 @@
-package Java.thundercatz.Display;
+package thundercatz.Display;
 
 import javax.swing.*;
 

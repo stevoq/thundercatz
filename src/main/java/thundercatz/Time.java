@@ -1,4 +1,4 @@
-package Java.thundercatz;
+package thundercatz;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

@@ -1,7 +1,7 @@
-package Java.thundercatz;
+package thundercatz;
 
-import Java.thundercatz.Display.Frame;
 
+import thundercatz.Display.Frame;
 import java.time.LocalDateTime;
 
 public class Main {
