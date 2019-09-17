@@ -14,6 +14,9 @@ build:
     stage: build
     script:
         - mvn compile
+    artifacts:
+        paths:
+            -build/
 
 test:
     stage: test
